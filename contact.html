@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İletişim — Deniz Ordulu</title>
+  <meta name="description" content="Deniz Ordulu ile iletişime geçin — deniz@goodmonkeys.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="Deniz Ordulu — ana sayfa">
+      <span class="wordmark">Deniz Ordulu</span>
+    </a>
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="index.html" data-tr="Anasayfa" data-en="Home">Anasayfa</a>
+      <a href="work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div class="lang-toggle" role="group" aria-label="Dil / Language">
+        <button data-lang-btn="tr" aria-pressed="true">TR</button>
+        <button data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav__burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section wrap contact-hero">
+      <span class="mono-label eyebrow blue" data-tr="(03) İletişim" data-en="(03) Contact">(03) İletişim</span>
+      <h1 class="display" data-tr="Bir fikrin<br>mi var?" data-en="Got an<br>idea?">Bir fikrin<br>mi var?</h1>
+      <p class="lead" style="margin-top:24px;" data-tr="Proje, iş birliği ya da sadece merhaba demek için — doğrudan yaz veya ara." data-en="For a project, a collaboration or just to say hi — write or call directly.">Proje, iş birliği ya da sadece merhaba demek için — doğrudan yaz veya ara.</p>
+
+      <div class="contact-lines">
+        <a href="mailto:deniz@goodmonkeys.com">deniz@goodmonkeys.com</a>
+        <a href="tel:+905414786680">+90 541 478 66 80</a>
+      </div>
+
+      <div class="contact-meta">
+        <span data-tr="Konum: İstanbul, Türkiye / Dubai, BAE" data-en="Based in Istanbul, Türkiye / Dubai, UAE">Konum: İstanbul, Türkiye / Dubai, BAE</span>
+        <a href="https://www.linkedin.com/in/denizordulu/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <span data-tr="Good Monkeys LLC — Dubai Meydan Free Zone" data-en="Good Monkeys LLC — Dubai Meydan Free Zone">Good Monkeys LLC — Dubai Meydan Free Zone</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="big">Deniz Ordulu</p>
+      <p style="color:var(--ink-60); margin-top:8px;" data-tr="Multidisipliner tasarımcı — İstanbul / Dubai" data-en="Multidisciplinary designer — Istanbul / Dubai">Multidisipliner tasarımcı — İstanbul / Dubai</p>
+    </div>
+    <div class="footer__links">
+      <a href="work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <a href="mailto:deniz@goodmonkeys.com">deniz@goodmonkeys.com</a>
+    </div>
+    <div class="footer__meta">
+      <img src="assets/logo.png" alt="Good Monkeys LLC" style="height:26px;width:auto;margin-bottom:10px;" onerror="this.style.display='none'" />
+      <div>© <span id="yr"></span> Good Monkeys LLC</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

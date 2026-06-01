@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nimbus — Deniz Ordulu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="../index.html" aria-label="Deniz Ordulu — ana sayfa">
+      <span class="wordmark">Deniz Ordulu</span>
+    </a>
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="../index.html" data-tr="Anasayfa" data-en="Home">Anasayfa</a>
+      <a href="../work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="../about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="../contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div class="lang-toggle" role="group" aria-label="Dil / Language">
+        <button data-lang-btn="tr" aria-pressed="true">TR</button>
+        <button data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav__burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section wrap">
+      <a href="../work.html" class="mono-label blue" data-tr="← Tüm işler" data-en="← All work">← Tüm işler</a>
+      <div class="proj-head" style="margin-top:18px;">
+        <h1 class="display">Nimbus</h1>
+        <div class="meta">
+          <span class="mono-label" data-tr="Disiplin" data-en="Discipline">Disiplin</span>
+          <strong data-tr="Ürün / Ambalaj" data-en="Product / Packaging">Ürün / Ambalaj</strong><br><br>
+          <span class="mono-label" data-tr="Rol" data-en="Role">Rol</span>
+          <strong data-tr="Tasarım & Kimlik" data-en="Design & Identity">Tasarım &amp; Kimlik</strong><br><br>
+          <span class="mono-label" data-tr="Yıl" data-en="Year">Yıl</span>
+          <strong>2023</strong>
+        </div>
+      </div>
+      <p class="proj-summary" data-tr="Sürdürülebilir bir içecek markası için şişe formundan etikete kadar bütünleşik bir ürün sistemi." data-en="An integrated product system for a sustainable beverage brand, from bottle form to label.">Sürdürülebilir bir içecek markası için şişe formundan etikete kadar bütünleşik bir ürün sistemi.</p>
+
+      <div class="gallery">
+        <div class="shot cv-paper"><span class="ph-title">Nimbus — Şişe</span></div>
+        <div class="shot cv-blue"><span class="ph-title">Etiket</span></div>
+        <div class="shot cv-soft"><span class="ph-title">Seri</span></div>
+        <div class="shot cv-accent"><span class="ph-title">Raf</span></div>
+      </div>
+
+      <div class="proj-body">
+        <p data-tr="Endüstriyel ve grafik tasarımın aynı projede buluştuğu bir çalışma: şişe formu tek elle kavranacak şekilde tasarlandı, etiket sistemi ise farklı aromalarda renk koduyla ayrışıyor." data-en="A project where industrial and graphic design meet on the same brief: the bottle form is shaped for a single-hand grip, while the label system separates flavors by color code.">Endüstriyel ve grafik tasarımın aynı projede buluştuğu bir çalışma: şişe formu tek elle kavranacak şekilde tasarlandı, etiket sistemi ise farklı aromalarda renk koduyla ayrışıyor.</p>
+        <p data-tr="Ambalaj, daha az malzemeyle daha güçlü bir raf etkisi hedefledi; form ve grafik birbirini tamamlayacak şekilde birlikte geliştirildi." data-en="The packaging aimed for a stronger shelf presence with less material; form and graphics were developed together to complement each other.">Ambalaj, daha az malzemeyle daha güçlü bir raf etkisi hedefledi; form ve grafik birbirini tamamlayacak şekilde birlikte geliştirildi.</p>
+      </div>
+
+      <nav class="proj-nav">
+        <a href="proje-05.html" data-tr="← Flux" data-en="← Flux">← Flux</a>
+        <a href="proje-01.html" data-tr="Halo →" data-en="Halo →">Halo →</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><p class="big">Deniz Ordulu</p></div>
+    <div class="footer__links">
+      <a href="../work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="../about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="../contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <a href="mailto:deniz@goodmonkeys.com">deniz@goodmonkeys.com</a>
+    </div>
+    <div class="footer__meta">
+      <img src="../assets/logo.png" alt="Good Monkeys LLC" style="height:26px;width:auto;margin-bottom:10px;" onerror="this.style.display='none'" />
+      <div>© <span id="yr"></span> Good Monkeys LLC</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../js/lang.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vektör — Deniz Ordulu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="../index.html" aria-label="Deniz Ordulu — ana sayfa">
+      <span class="wordmark">Deniz Ordulu</span>
+    </a>
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="../index.html" data-tr="Anasayfa" data-en="Home">Anasayfa</a>
+      <a href="../work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="../about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="../contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div class="lang-toggle" role="group" aria-label="Dil / Language">
+        <button data-lang-btn="tr" aria-pressed="true">TR</button>
+        <button data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav__burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section wrap">
+      <a href="../work.html" class="mono-label blue" data-tr="← Tüm işler" data-en="← All work">← Tüm işler</a>
+      <div class="proj-head" style="margin-top:18px;">
+        <h1 class="display">Vektör</h1>
+        <div class="meta">
+          <span class="mono-label" data-tr="Disiplin" data-en="Discipline">Disiplin</span>
+          <strong data-tr="Grafik / Marka" data-en="Graphic / Brand">Grafik / Marka</strong><br><br>
+          <span class="mono-label" data-tr="Rol" data-en="Role">Rol</span>
+          <strong data-tr="Kimlik & Sistem" data-en="Identity & System">Kimlik &amp; Sistem</strong><br><br>
+          <span class="mono-label" data-tr="Yıl" data-en="Year">Yıl</span>
+          <strong>2024</strong>
+        </div>
+      </div>
+      <p class="proj-summary" data-tr="Bir mühendislik markası için, modüler bir grid üzerine kurulu esnek görsel kimlik." data-en="A flexible visual identity built on a modular grid for an engineering brand.">Bir mühendislik markası için, modüler bir grid üzerine kurulu esnek görsel kimlik.</p>
+
+      <div class="gallery">
+        <div class="shot cv-band"><span class="ph-title">Logo Sistemi</span></div>
+        <div class="shot cv-blue"><span class="ph-title">Renk</span></div>
+        <div class="shot cv-paper"><span class="ph-title">Tipografi</span></div>
+        <div class="shot cv-ink"><span class="ph-title">Uygulamalar</span></div>
+      </div>
+
+      <div class="proj-body">
+        <p data-tr="Markanın mühendislik DNA'sını bir grid mantığına çevirdim. Logo, ikonlar ve düzen aynı modüler birimden türüyor; böylece sistem büyürken tutarlı kalıyor." data-en="I translated the brand's engineering DNA into a grid logic. The logo, icons and layout all derive from the same modular unit, keeping the system coherent as it scales.">Markanın mühendislik DNA'sını bir grid mantığına çevirdim. Logo, ikonlar ve düzen aynı modüler birimden türüyor; böylece sistem büyürken tutarlı kalıyor.</p>
+        <p data-tr="Kurumsal dokümanlardan dijital arayüze kadar uygulanabilen, net kurallara sahip bir marka kılavuzuyla teslim edildi." data-en="Delivered with a clear, rule-based brand guide that applies from corporate documents to digital interfaces.">Kurumsal dokümanlardan dijital arayüze kadar uygulanabilen, net kurallara sahip bir marka kılavuzuyla teslim edildi.</p>
+      </div>
+
+      <nav class="proj-nav">
+        <a href="proje-01.html" data-tr="← Halo" data-en="← Halo">← Halo</a>
+        <a href="proje-03.html" data-tr="Atlas →" data-en="Atlas →">Atlas →</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><p class="big">Deniz Ordulu</p></div>
+    <div class="footer__links">
+      <a href="../work.html" data-tr="İşler" data-en="Work">İşler</a>
+      <a href="../about.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="../contact.html" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <a href="mailto:deniz@goodmonkeys.com">deniz@goodmonkeys.com</a>
+    </div>
+    <div class="footer__meta">
+      <img src="../assets/logo.png" alt="Good Monkeys LLC" style="height:26px;width:auto;margin-bottom:10px;" onerror="this.style.display='none'" />
+      <div>© <span id="yr"></span> Good Monkeys LLC</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="../js/lang.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
