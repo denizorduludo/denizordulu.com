@@ -12,7 +12,7 @@
   --ink-60:    rgba(17,17,17,.6);
   --accent:    #FF4A1C;   /* sıcak vurgu — çok ölçülü kullanılır */
 
-  --font-display: "Archivo Black", "Archivo", system-ui, sans-serif;
+  --font-display: "Anton", "Archivo", system-ui, sans-serif;
   --font-body:    "Space Grotesk", system-ui, sans-serif;
 
   --maxw: 1280px;
@@ -119,7 +119,7 @@ main { position: relative; z-index: 1; }
 .wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--gutter); }
 .section { padding-block: clamp(56px, 9vw, 130px); }
 
-.eyebrow { display:inline-block; margin-bottom: 18px; }
+.eyebrow { display:inline-block; margin-bottom: 26px; }
 
 /* big section heading */
 .section h2.display { font-size: clamp(2.4rem, 7vw, 6rem); }
@@ -135,15 +135,15 @@ main { position: relative; z-index: 1; }
 }
 .hero__name {
   grid-column: 1 / 11; grid-row: 1;
-  font-size: clamp(2.8rem, 11vw, 8.5rem);
+  font-size: clamp(3.4rem, 15vw, 12rem);
   line-height: 1.0;
 }
-.hero__name .l2 { display:block; margin-left: clamp(12px, 5vw, 90px); }
+.hero__name .l2 { display:block; margin-left: clamp(16px, 8vw, 150px); }
 .hero__role {
-  grid-column: 8 / 13; grid-row: 2;
+  grid-column: 1 / 8; grid-row: 2;
   font-family: var(--font-display); text-transform: uppercase;
   font-size: clamp(1.1rem, 2.6vw, 2.2rem); line-height: 1;
-  color: var(--blue); transform: rotate(-2deg); justify-self: end; text-align: right;
+  color: var(--blue); transform: rotate(-2deg); justify-self: start; text-align: left;
 }
 /* scattered keyword chips */
 .scatter { position: relative; max-width: var(--maxw); margin: clamp(20px,4vw,40px) auto 0; min-height: 200px; }
@@ -160,9 +160,43 @@ main { position: relative; z-index: 1; }
 
 .chip.c1 { top: 0;    left: 2%;   font-size: clamp(1rem,3.4vw,2.6rem); transform: rotate(-4deg); }
 .chip.c2 { top: 30%;  left: 34%;  font-size: clamp(.9rem,2.6vw,2rem);  transform: rotate(3deg); }
-.chip.c3 { top: 8%;   right: 4%;  font-size: clamp(1rem,3vw,2.3rem);   transform: rotate(2deg); }
 .chip.c4 { top: 64%;  left: 12%;  font-size: clamp(.9rem,2.4vw,1.8rem);transform: rotate(-2deg); }
-.chip.c5 { top: 58%;  right: 16%; font-size: clamp(1rem,3.2vw,2.4rem); transform: rotate(-3deg); }
+.chip.c3 { top: 8%;   left: 50%;  font-size: clamp(1rem,3vw,2.3rem);   transform: rotate(2deg); }
+.chip.c5 { top: 58%;  left: 40%;  font-size: clamp(1rem,3.2vw,2.4rem); transform: rotate(-3deg); }
+
+/* hero portrait */
+.hero__grid, .scatter { position: relative; z-index: 1; }
+.hero__photo {
+  position: absolute;
+  right: clamp(8px, 3vw, 56px);
+  top: clamp(36px, 7vw, 96px);
+  transform: rotate(-3deg);
+  z-index: 0;
+}
+.hero__photo img {
+  display: block;
+  height: clamp(280px, 36vw, 500px);
+  width: auto;
+  filter: drop-shadow(0 20px 44px rgba(17,17,17,.20));
+}
+.hero__photo-chip {
+  position: absolute;
+  left: 50%; bottom: 0;
+  transform: translate(-50%, 45%) rotate(2deg);
+  white-space: nowrap;
+  font-size: clamp(.95rem, 2vw, 1.6rem);
+  z-index: 2;
+  box-shadow: 0 8px 22px rgba(17,17,17,.22);
+}
+
+/* about portrait */
+.about-photo {
+  grid-column: 9 / 13; grid-row: 1 / 3;
+  align-self: start; justify-self: end;
+  width: 100%; max-width: 240px; height: auto;
+  transform: rotate(2deg);
+  filter: drop-shadow(0 14px 32px rgba(17,17,17,.18));
+}
 
 /* ============================================================
    FEATURED / GENERIC SCATTER CARDS
@@ -266,15 +300,21 @@ main { position: relative; z-index: 1; }
 /* ============================================================
    CONTACT
    ============================================================ */
-.contact-hero h1 { font-size: clamp(2.6rem, 9.5vw, 7.5rem); line-height:1.04; }
+.contact-hero h1 { font-size: clamp(2.8rem, 11vw, 8.5rem); line-height:1.0; }
 .contact-lines { margin-top: clamp(30px,5vw,60px); display:flex; flex-direction: column; gap: 8px; }
 .contact-lines a {
   font-family: var(--font-display); text-transform: uppercase;
   font-size: clamp(1.6rem, 6vw, 4rem); line-height: 1.05; width: fit-content;
   transition: color .2s var(--ease), transform .2s var(--ease);
 }
-/* E-posta bir adres — küçük harf kalsın */
-.contact-lines a[href^="mailto"] { text-transform: none; letter-spacing: -0.01em; }
+/* E-posta bir adres — Anton'da küçük harf olmadığı için gövde fontuyla, küçük harf yaz */
+.contact-lines a[href^="mailto"] {
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.4rem, 5vw, 3.2rem);
+}
 .contact-lines a:hover { color: var(--blue); transform: translateX(10px); }
 .contact-meta { margin-top: clamp(36px,6vw,70px); display:flex; flex-wrap:wrap; gap: 12px 28px; color: var(--ink-60); font-size:.95rem; }
 .contact-meta a { text-decoration: underline; text-underline-offset: 3px; }
@@ -287,7 +327,7 @@ main { position: relative; z-index: 1; }
   margin: 0 var(--gutter) clamp(40px,6vw,80px);
   display:flex; flex-wrap:wrap; align-items:center; justify-content: space-between; gap: 24px;
 }
-.cta h2 { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(1.8rem,6vw,4.5rem); line-height:1.08; }
+.cta h2 { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(1.8rem,6vw,4.5rem); line-height:1.14; }
 .cta .btn { background: var(--bg); color: var(--ink); border:2px solid var(--ink); }
 
 /* ---------- buttons ---------- */
@@ -313,7 +353,11 @@ main { position: relative; z-index: 1; }
 .footer .big { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(1.6rem,5vw,3rem); line-height:1.05; }
 .footer a:hover { color: var(--blue); }
 .footer__links { display:flex; flex-direction:column; gap:6px; font-weight:600; }
-.footer__meta { align-self:flex-end; color: var(--ink-60); font-size:.82rem; }
+.footer__meta { align-self:flex-end; text-align:right; color: var(--ink-60); font-size:.82rem; }
+.footer__logolink { display:inline-block; margin: 0 0 12px auto; }
+.footer__logo { display:block; height: clamp(40px, 5vw, 56px); width:auto; background:transparent; }
+.footer__gm { color: var(--ink-60); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+.footer__gm:hover { color: var(--blue); }
 
 /* ============================================================
    RESPONSIVE
@@ -333,6 +377,9 @@ main { position: relative; z-index: 1; }
   .hero__role { grid-column: 1 / 13; justify-self: start; text-align: left; transform: none; margin-top: 8px; }
   .scatter { min-height: 0; display:flex; flex-wrap:wrap; gap: 12px; }
   .chip { position: static !important; transform: none !important; font-size: 1.1rem !important; }
+  .hero__photo { position: relative; transform: none; right:auto; top:auto; width: fit-content; margin: 28px auto 0; }
+  .hero__photo img { height:auto; width:auto; max-height: 340px; }
+  .about-photo { grid-column: 1 / 13; grid-row: auto; justify-self: start; max-width: 200px; margin-top: 16px; transform: none; }
 
   .work-card { transform: none !important; margin-top: 0 !important; }
   .work-card:nth-child(n){ grid-column: 1 / 13; }
@@ -346,5 +393,5 @@ main { position: relative; z-index: 1; }
 
 @media (prefers-reduced-motion: reduce){
   * { scroll-behavior: auto !important; transition: none !important; }
-  .chip, .work-card, .hero__role { transform: none !important; }
+  .chip, .work-card, .hero__role, .hero__photo, .about-photo { transform: none !important; }
 }
