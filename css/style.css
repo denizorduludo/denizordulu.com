@@ -164,31 +164,43 @@ main { position: relative; z-index: 1; }
 .chip.c3 { top: 8%;   left: 50%;  font-size: clamp(1rem,3vw,2.3rem);   transform: rotate(2deg); }
 .chip.c5 { top: 58%;  left: 40%;  font-size: clamp(1rem,3.2vw,2.4rem); transform: rotate(-3deg); }
 
-/* hero portrait */
+/* hero portrait — amorf (blob) çerçeve */
 .hero__grid, .scatter { position: relative; z-index: 1; }
 .hero__photo {
   position: absolute;
-  right: clamp(16px, 6vw, 130px);
-  top: clamp(24px, 6vw, 76px);
+  right: clamp(16px, 6vw, 120px);
+  top: clamp(20px, 5vw, 64px);
+  width: clamp(280px, 38vw, 500px);
   transform: rotate(-3deg);
   z-index: 0;
 }
-.hero__photo img {
-  display: block;
-  height: clamp(340px, 46vw, 640px);
-  width: auto;
-  filter: drop-shadow(0 22px 48px rgba(17,17,17,.22));
-}
-.hp-chip {
+.hero__photo::before {
+  content: "";
   position: absolute;
-  white-space: nowrap;
-  font-size: clamp(1rem, 2.4vw, 2.1rem);
-  z-index: 2;
-  box-shadow: 0 8px 22px rgba(17,17,17,.22);
+  inset: -18px -8px 6px -20px;
+  background: var(--blue);
+  border-radius: 56% 44% 59% 41% / 52% 56% 44% 48%;
+  transform: rotate(5deg);
+  z-index: 0;
 }
-.hp-chip.hp1 { left: 50%; bottom: 0; transform: translate(-50%, 35%) rotate(-3deg); z-index: 4; }
-.hp-chip.hp2 { left: 30%; bottom: 0; transform: translate(-50%, 58%) rotate(5deg);  z-index: 3; }
-.hp-chip.hp3 { left: 70%; bottom: 0; transform: translate(-50%, 48%) rotate(-6deg); z-index: 3; }
+.hero__photo-blob {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 1 / 0.86;
+  overflow: hidden;
+  border: 3px solid var(--ink);
+  border-radius: 47% 53% 46% 54% / 41% 44% 56% 59%;
+  background: var(--paper);
+  box-shadow: 0 22px 48px rgba(17,17,17,.22);
+}
+.hero__photo-blob img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
 
 /* ============================================================
    FEATURED / GENERIC SCATTER CARDS
@@ -369,8 +381,7 @@ main { position: relative; z-index: 1; }
   .hero__role { grid-column: 1 / 13; justify-self: start; text-align: left; transform: none; margin-top: 8px; }
   .scatter { min-height: 0; display:flex; flex-wrap:wrap; gap: 12px; }
   .chip { position: static !important; transform: none !important; font-size: 1.1rem !important; }
-  .hero__photo { position: relative; transform: none; right:auto; top:auto; width: fit-content; margin: 28px auto 0; }
-  .hero__photo img { height:auto; width:auto; max-height: 380px; }
+  .hero__photo { position: relative; transform: none; right:auto; top:auto; width: min(74vw, 320px); margin: 30px auto 0; }
 
   .work-card { transform: none !important; margin-top: 0 !important; }
   .work-card:nth-child(n){ grid-column: 1 / 13; }
