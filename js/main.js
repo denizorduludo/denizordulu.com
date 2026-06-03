@@ -36,5 +36,22 @@
         });
       });
     }
+
+    // Scroll reveal — öğeler görünüme girince yukarı süzülerek belirir
+    const rm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!rm && "IntersectionObserver" in window) {
+      const revealEls = document.querySelectorAll(
+        ".section, .work-card, .cta, .marquee, .fact, .tl-item, .about-hero, .proj-head, .gallery .shot"
+      );
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add("in");
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+      revealEls.forEach((el) => { el.classList.add("reveal"); io.observe(el); });
+    }
   });
 })();
