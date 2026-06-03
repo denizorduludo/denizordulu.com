@@ -10,12 +10,18 @@
 
     mm.add("(prefers-reduced-motion: no-preference)", function () {
 
-      /* ---------- HERO GİRİŞİ (clip-reveal) ---------- */
-      gsap.timeline({ defaults: { ease: "power4.out" } })
-        .from(".hero__name .ln i", { yPercent: 125, duration: 1.0, stagger: 0.12 })
-        .from(".hero__featured .label", { autoAlpha: 0, y: 14, duration: 0.6, stagger: 0.08 }, "-=0.6")
-        .from(".hero__counter", { autoAlpha: 0, y: 14, duration: 0.6 }, "<")
-        .from(".hero__role", { autoAlpha: 0, y: 18, duration: 0.7 }, "-=0.45");
+      /* ---------- HERO GİRİŞİ (clip-reveal) — sadece ana sayfada ---------- */
+      if (document.querySelector(".hero__name")) {
+        gsap.timeline({ defaults: { ease: "power4.out" } })
+          .from(".hero__name .ln i", { yPercent: 125, duration: 1.0, stagger: 0.12 })
+          .from(".hero__featured .label", { autoAlpha: 0, y: 14, duration: 0.6, stagger: 0.08 }, "-=0.6")
+          .from(".hero__counter", { autoAlpha: 0, y: 14, duration: 0.6 }, "<")
+          .from(".hero__role", { autoAlpha: 0, y: 18, duration: 0.7 }, "-=0.45");
+      }
+      /* proje detay sayfasında büyük başlık clip-reveal */
+      if (document.querySelector(".proj__name")) {
+        gsap.from(".proj__name", { yPercent: 18, autoAlpha: 0, duration: 0.9, ease: "power4.out" });
+      }
 
       /* ---------- SCROLL REVEAL ---------- */
       var triggers = [];

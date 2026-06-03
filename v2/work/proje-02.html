@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vektör — Deniz Ordulu</title>
+  <meta name="description" content="Bir mühendislik markası için, modüler bir grid üzerine kurulu esnek görsel kimlik." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="../index.html">Deniz Ordulu</a>
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="../index.html#calismalar" data-tr="Çalışmalar" data-en="Work">Çalışmalar</a>
+      <a href="../index.html#hakkimda" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="../index.html#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button data-lang-btn="tr" aria-pressed="true">TR</button>
+      <span aria-hidden="true" style="color:var(--ash)">/</span>
+      <button data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="proj">
+      <a class="label proj__back arrow-back" href="../index.html#calismalar" data-tr="← Tüm çalışmalar" data-en="← All work">← Tüm çalışmalar</a>
+
+      <div class="meta-row reveal" style="margin-top:20px">
+        <span class="label" data-tr="Grafik / Marka" data-en="Graphic / Brand">Grafik / Marka</span>
+        <span class="label">2024</span>
+      </div>
+
+      <h1 class="proj__name it" style="font-style:italic">Vektör</h1>
+
+      <p class="lead reveal" data-tr="Bir mühendislik markası için, modüler bir grid üzerine kurulu esnek görsel kimlik." data-en="A flexible visual identity built on a modular grid for an engineering brand.">Bir mühendislik markası için, modüler bir grid üzerine kurulu esnek görsel kimlik.</p>
+
+      <div class="proj__facts reveal">
+        <div><span class="label" data-tr="Disiplin" data-en="Discipline">Disiplin</span><strong data-tr="Grafik / Marka" data-en="Graphic / Brand">Grafik / Marka</strong></div>
+        <div><span class="label" data-tr="Rol" data-en="Role">Rol</span><strong data-tr="Kimlik & Sistem" data-en="Identity & System">Kimlik & Sistem</strong></div>
+        <div><span class="label" data-tr="Yıl" data-en="Year">Yıl</span><strong>2024</strong></div>
+      </div>
+
+      <div class="gallery reveal">
+        <div class="shot"><span class="label">Vektör — 01</span></div>
+        <div class="shot"><span class="label" data-tr="Detay" data-en="Detail">Detay</span></div>
+        <div class="shot"><span class="label" data-tr="Süreç" data-en="Process">Süreç</span></div>
+        <div class="shot"><span class="label" data-tr="Uygulama" data-en="Application">Uygulama</span></div>
+      </div>
+
+      <div class="proj__body prose reveal">
+        <p data-tr="Markanın mühendislik DNA'sını bir grid mantığına çevirdim. Logo, ikonlar ve düzen aynı modüler birimden türüyor; böylece sistem büyürken tutarlı kalıyor." data-en="I translated the brand's engineering DNA into a grid logic. The logo, icons and layout all derive from the same modular unit, keeping the system coherent as it scales.">Markanın mühendislik DNA'sını bir grid mantığına çevirdim. Logo, ikonlar ve düzen aynı modüler birimden türüyor; böylece sistem büyürken tutarlı kalıyor.</p>
+        <p data-tr="Kurumsal dokümanlardan dijital arayüze kadar uygulanabilen, net kurallara sahip bir marka kılavuzuyla teslim edildi." data-en="Delivered with a clear, rule-based brand guide that applies from corporate documents to digital interfaces.">Kurumsal dokümanlardan dijital arayüze kadar uygulanabilen, net kurallara sahip bir marka kılavuzuyla teslim edildi.</p>
+      </div>
+
+      <nav class="proj__nav reveal">
+        <a href="proje-01.html">← Halo</a>
+        <a href="proje-03.html">Atlas →</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div>
+      <p class="big">Deniz Ordulu</p>
+      <p class="label" style="margin-top:8px" data-tr="Multidisipliner tasarımcı — İstanbul / Dubai" data-en="Multidisciplinary designer — Istanbul / Dubai">Multidisipliner tasarımcı — İstanbul / Dubai</p>
+    </div>
+    <div class="footer__meta">
+      <a href="https://www.goodmonkeys.com/" target="_blank" rel="noopener" aria-label="Good Monkeys LLC"><img src="../../assets/logo.png" alt="Good Monkeys LLC" class="footer__logo" onerror="this.style.display='none'" /></a>
+      <div class="label">© <span id="yr"></span> <a href="https://www.goodmonkeys.com/" target="_blank" rel="noopener" class="footer__gm">Good Monkeys LLC</a></div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/lang.js"></script>
+  <script src="../js/anim.js"></script>
+</body>
+</html>
