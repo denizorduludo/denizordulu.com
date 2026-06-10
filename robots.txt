@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /v1/
 
-Sitemap: https://denizorduludo.github.io/denizordulu.com/sitemap.xml
+Sitemap: https://denizordulu.com/sitemap.xml
