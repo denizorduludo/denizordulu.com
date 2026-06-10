@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deniz Ordulu — Endüstriyel & Grafik Tasarımcı</title>
   <meta name="description" content="Deniz Ordulu — endüstriyel ve grafik tasarımcı. Ürün, marka ve AI-entegre çözümler." />
-  <meta name="theme-color" content="#000000" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <!-- SEO:start -->
   <meta name="author" content="Deniz Ordulu" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1B34FF" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://denizordulu.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Deniz Ordulu" />
@@ -70,17 +69,14 @@
     }
   ]
   </script>
-  <!-- SEO:end -->
 </head>
 <body>
-
-  <!-- NAV -->
   <header class="nav">
     <a class="nav__brand" href="index.html">Deniz Ordulu</a>
     <nav class="nav__links" aria-label="Ana menü">
-      <a href="#calismalar" data-tr="Projeler" data-en="Projects">Projeler</a>
-      <a href="#hakkimda" data-tr="Hakkımda" data-en="About">Hakkımda</a>
-      <a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <a href="projeler.html" data-tr="Projeler" data-en="Projects">Projeler</a>
+      <a href="hakkimda.html" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="iletisim.html" data-tr="İletişim" data-en="Contact">İletişim</a>
     </nav>
     <div class="lang" role="group" aria-label="Dil / Language">
       <button data-lang-btn="tr" aria-pressed="true">TR</button>
@@ -90,8 +86,6 @@
   </header>
 
   <main class="wrap">
-
-    <!-- HERO -->
     <section class="hero">
       <div class="hero__top">
         <div class="hero__featured">
@@ -108,272 +102,62 @@
 
       <p class="hero__role" data-tr="Formdan deneyime, üründen markaya uzanan aralıkta; doğru sorunu doğru araçla çözüyorum." data-en="I work in the range from form to experience, product to brand — solving the right problem with the right tool.">Formdan deneyime, üründen markaya uzanan aralıkta; doğru sorunu doğru araçla çözüyorum.</p>
 
-      <!-- mouse ile yaklaşınca beliren mikro etiketler -->
-      <div class="plabels" aria-hidden="true">
-        <span class="plabel" style="top:14%; left:64%" data-tr="Yaratıcı Düşünme" data-en="Creative Thinking">Yaratıcı Düşünme</span>
-        <span class="plabel" style="top:40%; left:78%" data-tr="Problem Çözme" data-en="Problem Solving">Problem Çözme</span>
-        <span class="plabel" style="top:70%; left:58%" data-tr="Proje Yönetimi" data-en="Project Management">Proje Yönetimi</span>
-        <span class="plabel" style="top:86%; left:30%" data-tr="AI-Entegre Çözümler" data-en="AI-Integrated Solutions">AI-Entegre Çözümler</span>
+      <div class="hints" aria-hidden="false">
+        <span class="hint hint--b" style="top:18%; left:61%">
+          <svg class="hint__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3 L17 16 L3 16 Z"/></svg>
+          <span class="hint__chip" data-tr="Proje Yönetimi" data-en="Project Management">Proje Yönetimi</span>
+        </span>
+        <span class="hint " style="top:44%; left:80%">
+          <svg class="hint__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/></svg>
+          <span class="hint__chip" data-tr="Endüstriyel Tasarım" data-en="Industrial Design">Endüstriyel Tasarım</span>
+        </span>
+        <span class="hint hint--lime" style="top:70%; left:55%">
+          <svg class="hint__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3 V17 M3 10 H17"/></svg>
+          <span class="hint__chip" data-tr="Yaratıcı Düşünme" data-en="Creative Thinking">Yaratıcı Düşünme</span>
+        </span>
+        <span class="hint " style="top:86%; left:30%">
+          <svg class="hint__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3 L17 10 L10 17 L3 10 Z"/></svg>
+          <span class="hint__chip" data-tr="Grafik Tasarım" data-en="Graphic Design">Grafik Tasarım</span>
+        </span>
       </div>
     </section>
 
-    <!-- YAKLAŞIM -->
-    <section class="section section--tight" id="yaklasim">
+    <!-- ÖNE ÇIKAN — not kâğıtları -->
+    <section class="featured section--tight">
       <div class="meta-row reveal">
-        <span class="label" data-tr="(01) Yaklaşım" data-en="(01) Approach">(01) Yaklaşım</span>
-        <span class="label" data-tr="Ürün · Marka · AI" data-en="Product · Brand · AI">Ürün · Marka · AI</span>
+        <span class="label" data-tr="(01) Öne Çıkan" data-en="(01) Featured">(01) Öne Çıkan</span>
+        <span class="label" data-tr="Seçili 4 iş" data-en="4 selected works">Seçili 4 iş</span>
       </div>
-      <div class="cols">
-        <div class="cols__aside"><span class="label reveal" data-tr="Felsefe" data-en="Philosophy">Felsefe</span></div>
-        <p class="lead reveal" data-tr="Disiplinleri ayırmak yerine, doğru sorunu doğru araçla çözmek için bir araya getiriyorum. Fiziksel üründen marka sistemine, oradan AI-entegre dijital çözüme kadar tek bir düşünme biçimi." data-en="Instead of separating disciplines, I bring them together to solve the right problem with the right tool — from physical product to brand system to AI-integrated digital solution, one way of thinking.">Disiplinleri ayırmak yerine, doğru sorunu doğru araçla çözmek için bir araya getiriyorum. Fiziksel üründen marka sistemine, oradan AI-entegre dijital çözüme kadar tek bir düşünme biçimi.</p>
+      <div class="notes">
+        <a class="note n1 reveal" href="work/proje-07.html">
+          <span class="note__tape"></span>
+          <span class="note__img"><img src="assets/work/proje-07-1.webp" alt="Bold - Espresso Mug" loading="lazy" decoding="async" /></span>
+          <span class="note__name" data-tr="Bold - Espresso Mug" data-en="Bold - Espresso Mug">Bold - Espresso Mug</span>
+          <span class="label note__disc" data-tr="Endüstriyel / Ürün" data-en="Industrial / Product">Endüstriyel / Ürün</span>
+        </a>
+        <a class="note n2 reveal" href="work/proje-08.html">
+          <span class="note__tape"></span>
+          <span class="note__img"><img src="assets/work/proje-08-1.webp" alt="Marka İletişimi - Remove" loading="lazy" decoding="async" /></span>
+          <span class="note__name" data-tr="Marka İletişimi - Remove" data-en="Brand Communication - Remove">Marka İletişimi - Remove</span>
+          <span class="label note__disc" data-tr="Grafik / Marka" data-en="Graphic / Brand">Grafik / Marka</span>
+        </a>
+        <a class="note n3 note--lime reveal" href="work/proje-04.html">
+          <span class="note__tape"></span>
+          <span class="note__img"><img src="assets/work/proje-04-1.webp" alt="Paco" loading="lazy" decoding="async" /></span>
+          <span class="note__name" data-tr="Paco" data-en="Paco">Paco</span>
+          <span class="label note__disc" data-tr="Grafik / Ambalaj" data-en="Graphic / Packaging">Grafik / Ambalaj</span>
+        </a>
+        <a class="note n4 reveal" href="work/proje-03.html">
+          <span class="note__tape"></span>
+          <span class="note__img"><img src="assets/work/proje-03-1.webp" alt="Bülbülü Öldürmek" loading="lazy" decoding="async" /></span>
+          <span class="note__name" data-tr="Bülbülü Öldürmek" data-en="To Kill a Mockingbird">Bülbülü Öldürmek</span>
+          <span class="label note__disc" data-tr="Grafik / Kitap" data-en="Graphic / Book">Grafik / Kitap</span>
+        </a>
+        <a class="featured__cta arrow reveal" href="projeler.html" data-tr="Tüm projeler" data-en="All projects">Tüm projeler</a>
       </div>
     </section>
-
-    <!-- PROJELER -->
-    <section class="section" id="calismalar">
-      <div class="meta-row reveal">
-        <span class="label" data-tr="(02) Seçili Projeler" data-en="(02) Selected Projects">(02) Seçili Projeler</span>
-        <span class="label" data-tr="2024 — 2025" data-en="2024 — 2025">2024 — 2025</span>
-      </div>
-
-      <div class="work-list">
-        <a class="work-row reveal" href="work/proje-01.html">
-          <div class="work-row__head">
-            <span class="work-row__index">01</span>
-            <span class="work-row__name" data-tr="Yaratıcı Anahtarlık Ambalajı" data-en="Creative Key-Tag Packaging">Yaratıcı Anahtarlık Ambalajı</span>
-            <span class="label work-row__disc" data-tr="Ürün / Ambalaj" data-en="Product / Packaging">Ürün / Ambalaj</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Gerçek bir Airbus A320 gövde panelinden üretilen anahtarlık için müşteri ambalaj konsepti (SkyArt × Miles & Smiles)." data-en="Client packaging concept for a key tag made from a real Airbus A320 fuselage panel (SkyArt × Miles & Smiles).">Gerçek bir Airbus A320 gövde panelinden üretilen anahtarlık için müşteri ambalaj konsepti (SkyArt × Miles & Smiles).</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-02.html">
-          <div class="work-row__head">
-            <span class="work-row__index">02</span>
-            <span class="work-row__name" data-tr="Hi-Fi Ses Sistemi" data-en="Hi-Fi Sound System">Hi-Fi Ses Sistemi</span>
-            <span class="label work-row__disc" data-tr="Endüstriyel / Ürün" data-en="Industrial / Product">Endüstriyel / Ürün</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Ev içi HiFi ses sistemi — bitirme projesi olarak tasarlanan tam bir hoparlör/sistem konsepti." data-en="An in-home HiFi sound system — a complete speaker/system concept designed as a graduation project.">Ev içi HiFi ses sistemi — bitirme projesi olarak tasarlanan tam bir hoparlör/sistem konsepti.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-03.html">
-          <div class="work-row__head">
-            <span class="work-row__index">03</span>
-            <span class="work-row__name it" style="font-style:italic" data-tr="Bülbülü Öldürmek" data-en="To Kill a Mockingbird">Bülbülü Öldürmek</span>
-            <span class="label work-row__disc" data-tr="Grafik / Kitap Kapağı" data-en="Graphic / Book Cover">Grafik / Kitap Kapağı</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Harper Lee'nin 'Bülbülü Öldürmek' romanı için kavramsal kitap kapağı yeniden tasarımı." data-en="A conceptual cover redesign for Harper Lee's 'To Kill a Mockingbird'.">Harper Lee'nin 'Bülbülü Öldürmek' romanı için kavramsal kitap kapağı yeniden tasarımı.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-04.html">
-          <div class="work-row__head">
-            <span class="work-row__index">04</span>
-            <span class="work-row__name it" style="font-style:italic" data-tr="Paco" data-en="Paco">Paco</span>
-            <span class="label work-row__disc" data-tr="Grafik / Ambalaj" data-en="Graphic / Packaging">Grafik / Ambalaj</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="'The pasta company' — bir makarna markası için marka kimliği ve ambalaj tasarımı; 3D görselleştirme ve animasyonla." data-en="'The pasta company' — brand identity and packaging for a pasta brand, with 3D visualization and animation.">'The pasta company' — bir makarna markası için marka kimliği ve ambalaj tasarımı; 3D görselleştirme ve animasyonla.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-05.html">
-          <div class="work-row__head">
-            <span class="work-row__index">05</span>
-            <span class="work-row__name" data-tr="Chopping Board" data-en="Chopping Board">Chopping Board</span>
-            <span class="label work-row__disc" data-tr="Endüstriyel" data-en="Industrial">Endüstriyel</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Çift yönlü, paslanmaz çelik saklama hazneli yenilikçi bir kesme tahtası — ilk el çiziminden dijitale." data-en="An innovative bidirectional cutting board with a stainless-steel storage tray — from first hand sketch to digital.">Çift yönlü, paslanmaz çelik saklama hazneli yenilikçi bir kesme tahtası — ilk el çiziminden dijitale.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-06.html">
-          <div class="work-row__head">
-            <span class="work-row__index">06</span>
-            <span class="work-row__name it" style="font-style:italic" data-tr="Kurgusal Albüm Lansmanı" data-en="Fictional Album Launch">Kurgusal Albüm Lansmanı</span>
-            <span class="label work-row__disc" data-tr="Grafik / Motion" data-en="Graphic / Motion">Grafik / Motion</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Kurgusal bir sanatçı (PestoYarm) için 'Lin' albümünün lansman kampanyası ve görsel kimliği." data-en="Launch campaign and visual identity for the album 'Lin' by a fictional artist (PestoYarm).">Kurgusal bir sanatçı (PestoYarm) için 'Lin' albümünün lansman kampanyası ve görsel kimliği.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-07.html">
-          <div class="work-row__head">
-            <span class="work-row__index">07</span>
-            <span class="work-row__name" data-tr="Bold - Espresso Mug" data-en="Bold - Espresso Mug">Bold - Espresso Mug</span>
-            <span class="label work-row__disc" data-tr="Endüstriyel / Ürün" data-en="Industrial / Product">Endüstriyel / Ürün</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Espresso için tasarlanmış, formu ve cam detaylarıyla öne çıkan bir fincan konsepti." data-en="An espresso cup concept distinguished by its form and glass detailing.">Espresso için tasarlanmış, formu ve cam detaylarıyla öne çıkan bir fincan konsepti.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-08.html">
-          <div class="work-row__head">
-            <span class="work-row__index">08</span>
-            <span class="work-row__name it" style="font-style:italic" data-tr="Marka İletişimi - Remove" data-en="Brand Communication - Remove">Marka İletişimi - Remove</span>
-            <span class="label work-row__disc" data-tr="Grafik / Marka" data-en="Graphic / Brand">Grafik / Marka</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Sürdürülebilirlik odaklı bir mobilya/yenileme markası için baştan sona bir marka dünyası: kimlik, reklam ve sosyal medya." data-en="A full brand world for a sustainability-focused furniture/renovation brand: identity, advertising and social media.">Sürdürülebilirlik odaklı bir mobilya/yenileme markası için baştan sona bir marka dünyası: kimlik, reklam ve sosyal medya.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-09.html">
-          <div class="work-row__head">
-            <span class="work-row__index">09</span>
-            <span class="work-row__name" data-tr="Ambalaj Tasarımı - Beko" data-en="Packaging Design - Beko">Ambalaj Tasarımı - Beko</span>
-            <span class="label work-row__disc" data-tr="Ambalaj" data-en="Packaging">Ambalaj</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="Bir Türk kahve makinesi (Beko) için 3D modellenmiş ambalaj tasarımı ve raf sunumu." data-en="3D-modeled packaging design and shelf presentation for a Turkish coffee machine (Beko).">Bir Türk kahve makinesi (Beko) için 3D modellenmiş ambalaj tasarımı ve raf sunumu.</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="work-row reveal" href="work/proje-10.html">
-          <div class="work-row__head">
-            <span class="work-row__index">10</span>
-            <span class="work-row__name" data-tr="Hareketli Konsept İçerikler" data-en="Conceptual Motion Content">Hareketli Konsept İçerikler</span>
-            <span class="label work-row__disc" data-tr="Motion / Grafik" data-en="Motion / Graphic">Motion / Grafik</span>
-          </div>
-          <div class="work-row__reveal"><span></span>
-            <div>
-              <p class="work-row__desc" data-tr="İki kavramsal motion poster — 'Distortion' (medya ve manipülasyon) ve 'Hope' (umudun çift yüzü)." data-en="Two conceptual motion posters — 'Distortion' (media and manipulation) and 'Hope' (the two faces of hope).">İki kavramsal motion poster — 'Distortion' (medya ve manipülasyon) ve 'Hope' (umudun çift yüzü).</p>
-              <span class="work-row__more arrow" data-tr="Projeyi gör" data-en="View project">Projeyi gör</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- HAKKIMDA -->
-    <section class="section" id="hakkimda">
-      <div class="meta-row reveal">
-        <span class="label" data-tr="(03) Hakkımda" data-en="(03) About">(03) Hakkımda</span>
-        <span class="label" data-tr="İstanbul / Dubai" data-en="Istanbul / Dubai">İstanbul / Dubai</span>
-      </div>
-
-      <div class="about-intro">
-        <figure class="portrait reveal">
-          <div class="frame"><img src="assets/deniz.png" alt="Deniz Ordulu" /></div>
-          <figcaption class="label">Deniz Ordulu — İstanbul / Dubai</figcaption>
-        </figure>
-        <div>
-          <span class="label reveal" data-tr="Profil" data-en="Profile">Profil</span>
-          <p class="prose reveal" style="margin-top:14px" data-tr="Ben Deniz Ordulu. Endüstriyel ve grafik tasarımı tek bir düşünme biçiminde birleştiren multidisipliner bir tasarımcıyım. Fiziksel ürünlerden marka sistemlerine, oradan AI-entegre dijital çözümlere kadar uzanan bir aralıkta çalışıyorum." data-en="I'm Deniz Ordulu — a multidisciplinary designer who merges industrial and graphic design into a single way of thinking. I work across a spectrum from physical products to brand systems to AI-integrated digital solutions.">Ben Deniz Ordulu. Endüstriyel ve grafik tasarımı tek bir düşünme biçiminde birleştiren multidisipliner bir tasarımcıyım. Fiziksel ürünlerden marka sistemlerine, oradan AI-entegre dijital çözümlere kadar uzanan bir aralıkta çalışıyorum.</p>
-        </div>
-      </div>
-
-      <div class="facts">
-        <div class="fact reveal">
-          <h3 data-tr="Ne yapıyorum" data-en="What I do">Ne yapıyorum</h3>
-          <p data-tr="Endüstriyel tasarım, ürün geliştirme, görsel kimlik ve AI-destekli ürün/araç tasarımı." data-en="Industrial design, product development, visual identity and AI-assisted product/tool design.">Endüstriyel tasarım, ürün geliştirme, görsel kimlik ve AI-destekli ürün/araç tasarımı.</p>
-        </div>
-        <div class="fact reveal">
-          <h3 data-tr="Nasıl çalışıyorum" data-en="How I work">Nasıl çalışıyorum</h3>
-          <p data-tr="Problemi tanımlamakla başlarım; araştırma, hızlı prototip ve net karar. Süreci yönetir, ekiple birlikte üretirim." data-en="I start by framing the problem — then research, rapid prototyping and clear decisions. I manage the process and build with the team.">Problemi tanımlamakla başlarım; araştırma, hızlı prototip ve net karar. Süreci yönetir, ekiple birlikte üretirim.</p>
-        </div>
-        <div class="fact reveal">
-          <h3 data-tr="Şu an" data-en="Right now">Şu an</h3>
-          <p data-tr="Bir venture studio / startup ortamında kurucu ortak ve genel müdür olarak AI odaklı projeler yürütüyorum (Good Monkeys LLC, Dubai)." data-en="Co-founder & general manager at a venture studio / startup, leading AI-focused projects (Good Monkeys LLC, Dubai).">Bir venture studio / startup ortamında kurucu ortak ve genel müdür olarak AI odaklı projeler yürütüyorum (Good Monkeys LLC, Dubai).</p>
-        </div>
-      </div>
-
-      <div class="tl">
-        <h2 class="tl__head reveal" data-tr="Deneyim" data-en="Experience">Deneyim</h2>
-        <div class="tl-item reveal">
-          <span class="yr">2025 →</span>
-          <div>
-            <h4 data-tr="Kurucu Ortak & Genel Müdür" data-en="Co-Founder & General Manager">Kurucu Ortak &amp; Genel Müdür</h4>
-            <p data-tr="Venture studio / startup — AI-entegre ürün ve hizmetler. Strateji, ürün yönü ve operasyonun yönetimi." data-en="Venture studio / startup — AI-integrated products and services. Owning strategy, product direction and operations.">Venture studio / startup — AI-entegre ürün ve hizmetler. Strateji, ürün yönü ve operasyonun yönetimi.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <span class="yr">2023 — 2025</span>
-          <div>
-            <h4 data-tr="Endüstriyel Tasarım Ekip Lideri / Ürün Tasarımcısı" data-en="Industrial Design Lead / Product Designer">Endüstriyel Tasarım Ekip Lideri / Ürün Tasarımcısı</h4>
-            <p data-tr="Havacılık — kabin simülatörü ve uçak mobilyası sektörü. Ürün geliştirme, ekip ve proje yönetimi." data-en="Aviation — cabin simulator and aircraft furniture sector. Product development, team and project management.">Havacılık — kabin simülatörü ve uçak mobilyası sektörü. Ürün geliştirme, ekip ve proje yönetimi.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <span class="yr">2022 — 2023</span>
-          <div>
-            <h4 data-tr="Endüstriyel & Grafik Tasarım" data-en="Industrial & Graphic Design">Endüstriyel &amp; Grafik Tasarım</h4>
-            <p data-tr="Tüketici ürünleri (ör. bisiklet) — seri üretim ve ürün grafiği; ayrıca yaratıcı stüdyo ortamında grafik tasarım." data-en="Consumer products (e.g. bicycles) — mass production and product graphics; plus graphic design within a creative studio.">Tüketici ürünleri (ör. bisiklet) — seri üretim ve ürün grafiği; ayrıca yaratıcı stüdyo ortamında grafik tasarım.</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:clamp(36px,5vw,64px)">
-        <span class="label reveal" data-tr="Araçlar & Yetenekler" data-en="Tools & Skills">Araçlar &amp; Yetenekler</span>
-        <div class="skills reveal">
-          <span data-tr="Proje Yönetimi" data-en="Project Management">Proje Yönetimi</span>
-          <span data-tr="Ekip Yönetimi" data-en="Team Management">Ekip Yönetimi</span>
-          <span data-tr="Ürün Tasarımı" data-en="Product Design">Ürün Tasarımı</span>
-          <span data-tr="Endüstriyel Tasarım" data-en="Industrial Design">Endüstriyel Tasarım</span>
-          <span data-tr="Grafik Tasarım" data-en="Graphic Design">Grafik Tasarım</span>
-          <span>3D</span>
-          <span>Adobe Suite</span>
-          <span data-tr="Seri Üretim" data-en="Mass Production">Seri Üretim</span>
-          <span data-tr="AI Entegrasyonu" data-en="AI Integration">AI Entegrasyonu</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- İLETİŞİM -->
-    <section class="section" id="iletisim">
-      <div class="meta-row reveal">
-        <span class="label" data-tr="(04) İletişim" data-en="(04) Contact">(04) İletişim</span>
-        <span class="label" data-tr="Yeni proje?" data-en="New project?">Yeni proje?</span>
-      </div>
-      <h2 class="contact__name reveal" data-tr="Konuşalım." data-en="Let's talk.">Konuşalım.</h2>
-      <div class="contact__lines reveal">
-        <a href="mailto:deniz@goodmonkeys.com">deniz@goodmonkeys.com</a>
-        <a href="tel:+905414786680">+90 541 478 66 80</a>
-      </div>
-      <div class="contact__meta label reveal">
-        <a href="https://www.linkedin.com/in/denizordulu/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <span data-tr="İstanbul, Türkiye / Dubai, BAE" data-en="Istanbul, Türkiye / Dubai, UAE">İstanbul, Türkiye / Dubai, BAE</span>
-        <span>Good Monkeys LLC — Dubai Meydan Free Zone</span>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer wrap">
     <div>
       <p class="big">Deniz Ordulu</p>
@@ -386,7 +170,6 @@
   </footer>
 
   <div class="cursor-dot" aria-hidden="true"></div>
-
   <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
